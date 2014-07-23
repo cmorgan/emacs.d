@@ -4,3 +4,5 @@ places
 .recentf
 cider-history
 projectile-bookmarks.eld
+backups
+auto-save-list

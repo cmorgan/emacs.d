@@ -49,7 +49,6 @@
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-
 ;; Enhances M-x to allow easier execution of commands. Provides
 ;; a filterable list of possible commands in the minibuffer
 ;; http://www.emacswiki.org/emacs/Smex
@@ -59,3 +58,5 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+;; nicer binding for projectile
+(define-key evil-normal-state-map "\C-p" 'projectile-find-file)

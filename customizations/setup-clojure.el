@@ -2,6 +2,10 @@
 ;; Clojure
 ;;;;
 
+;; autoindent code on return rather than press C-j
+(add-hook 'clojure-mode-hook '(lambda ()
+  (local-set-key (kbd "RET") 'newline-and-indent)))
+
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
@@ -72,6 +76,7 @@
      "(in-ns 'environ.core)
       (def env (merge (read-env-file) (read-system-props) (read-system-env)))")
     (cider-repl-set-ns current-ns)))
+
 
 (defun cider-refresh ()
   (interactive)

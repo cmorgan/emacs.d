@@ -78,6 +78,8 @@
     scss-mode
     haskell-mode
     evil
+    xclip
+    ;evil-nerd-commenter
     ))
 
 (dolist (p my-packages)
@@ -104,6 +106,9 @@
 ;;;;
 (require 'evil)
 (evil-mode 1)
+
+(require 'xclip)
+(xclip-mode t)
 
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
