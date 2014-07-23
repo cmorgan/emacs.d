@@ -76,7 +76,9 @@
     yaml-mode
     coffee-mode
     scss-mode
-    haskell-mode))
+    haskell-mode
+    evil
+    ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -100,6 +102,8 @@
 ;;;;
 ;; Customization
 ;;;;
+(require 'evil)
+(evil-mode 1)
 
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
