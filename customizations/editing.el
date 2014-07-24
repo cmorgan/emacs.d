@@ -58,7 +58,7 @@
 ;; yay rainbows!
 (global-rainbow-delimiters-mode t)
 
-;; use 2 spaces for tabs
+;; use 4 spaces for tabs
 (defun die-tabs ()
   (interactive)
   (set-variable 'tab-width 4)
@@ -68,3 +68,4 @@
 
 ; evil mode comment combination
 (define-key evil-visual-state-map (kbd ",c") 'evilnc-comment-or-uncomment-lines)
+(define-key evil-normal-state-map (kbd ",G") 'rgrep)
