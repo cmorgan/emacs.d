@@ -58,6 +58,9 @@
 ;; yay rainbows!
 (global-rainbow-delimiters-mode t)
 
+;; if a buffer changes outside of emacs, reload it
+(global-auto-revert-mode 1)
+
 ;; use 4 spaces for tabs
 (defun die-tabs ()
   (interactive)
